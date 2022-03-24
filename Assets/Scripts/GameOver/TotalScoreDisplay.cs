@@ -20,8 +20,8 @@ namespace GameOver
         {
             totalScore.text =
                 $"Score: {currentScoreReference.Value}\n" +
-                $" Ducks: +{duckAmountReference.Value}\n" +
-                $" Total: {totalScoreReference.Value}";
+                $"Ducks: +{duckAmountReference.Value}\n" +
+                $"Total: {totalScoreReference.Value}";
         }
     }
 }
