@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: fcb4f109b36a539478a2d0c26fedd198
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Bodo Amat
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 44f23284fa1a7904fa67635ee6a28970, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
