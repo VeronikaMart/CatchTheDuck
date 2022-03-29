@@ -22,7 +22,7 @@ namespace Player
 
             if (playerPosY <= 0)
             {
-                currentScore.SetValue(Mathf.Abs((int)playerPosY));
+                currentScore.IntValue = Mathf.Abs((int)playerPosY);
             }
         }
     }

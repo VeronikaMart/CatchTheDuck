@@ -12,12 +12,12 @@ namespace GameOver
 
         public void CalculateTotalScore()
         {
-            var total = currentScore.value + duckScore.value;
-            totalScore.SetValue(total);
+            var total = currentScore.IntValue + duckScore.IntValue;
+            totalScore.IntValue = total;
 
-            if (totalScore.value > highScore.value)
+            if (totalScore.IntValue > highScore.IntValue)
             {
-                highScore.SetValue(total);
+                highScore.IntValue = total;
             }
         }
     }

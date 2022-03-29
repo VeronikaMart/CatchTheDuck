@@ -7,7 +7,7 @@ namespace Controllers.SO
     [CreateAssetMenu(fileName = "SaveGameController", menuName = "Scriptable Objects/Controllers/Save Game Controller")]
     public class SaveGameController : ScriptableObject
     {
-        public IntVariable highScore;
+        [SerializeField] private IntVariable highScore;
 
         public void SaveGame()
         {

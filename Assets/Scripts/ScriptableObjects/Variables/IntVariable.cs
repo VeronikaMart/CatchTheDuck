@@ -4,8 +4,14 @@ using UnityEngine;
 public class IntVariable : ScriptableObject, IValue<int>
 {
     [ContextMenuItem("Reset", "ResetValue")]
-    public int value;
-    public IntStates state;
+    [SerializeField] private int intValue;
+    public int IntValue 
+    { 
+        get => intValue; 
+        set => intValue = value; 
+    }
+    
+    [SerializeField] private IntStates state;
     [TextArea]
     [SerializeField] private string description;
 
@@ -14,14 +20,9 @@ public class IntVariable : ScriptableObject, IValue<int>
         ResetValue();
     }
 
-    public void SetValue(int value) 
-    { 
-        this.value = value; 
-    }
-
     public void ApplyChange(int amount)
     {
-        value += amount;
+        intValue += amount;
     }
 
     public void ResetValue()
@@ -29,10 +30,10 @@ public class IntVariable : ScriptableObject, IValue<int>
         switch (state)
         {
             case IntStates.TEMPORAL:
-                SetValue(0);
+                intValue = 0;
                 break;
             case IntStates.CONSTANT:
-                Debug.Log($"High score ={value}");
+                Debug.Log($"High score ={intValue}");
                 break;
             default:
                 break;

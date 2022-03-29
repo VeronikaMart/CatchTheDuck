@@ -3,8 +3,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "BoolVariable", menuName = "Scriptable Objects/Bool Variable")]
 public class BoolVariable : ScriptableObject, IValue<bool>
 {
+    public bool State => state;
     [ContextMenuItem("Reset", "ResetValue")]
-    public bool state;
+    [SerializeField] private bool state;
     [TextArea]
     [SerializeField] private string description;
 
@@ -13,13 +14,14 @@ public class BoolVariable : ScriptableObject, IValue<bool>
         ResetValue(); 
     }
 
-    public void SetValue(bool state) 
-    { 
-        this.state = state; 
+    // Button
+    public void SetState(bool state)
+    {
+        this.state = state;
     }
 
     public void ResetValue()
     {
-        SetValue(false);
+        state = false;
     }
 }

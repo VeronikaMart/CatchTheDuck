@@ -21,7 +21,7 @@ namespace Player
 
         public void Move(float direction)
         {
-            if (gamePlaying.state)
+            if (gamePlaying.State)
             {
                 HorizontalMovement(direction);
                 animator.SetTrigger("Walk");
