@@ -5,11 +5,7 @@ public class IntVariable : ScriptableObject, IValue<int>
 {
     [ContextMenuItem("Reset", "ResetValue")]
     [SerializeField] private int intValue;
-    public int IntValue 
-    { 
-        get => intValue; 
-        set => intValue = value; 
-    }
+    public int IntValue { get => intValue; set => intValue = value; }
     
     [SerializeField] private IntStates state;
     [TextArea]
@@ -27,16 +23,9 @@ public class IntVariable : ScriptableObject, IValue<int>
 
     public void ResetValue()
     {
-        switch (state)
+        if (state == IntStates.TEMPORAL)
         {
-            case IntStates.TEMPORAL:
-                intValue = 0;
-                break;
-            case IntStates.CONSTANT:
-                Debug.Log($"High score ={intValue}");
-                break;
-            default:
-                break;
+            intValue = 0;
         }
     }
 }

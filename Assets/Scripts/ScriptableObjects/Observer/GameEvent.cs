@@ -17,17 +17,11 @@ public class GameEvent : ScriptableObject
 
     public void RegisterListener(GameEventListener listener)
     {
-        if (!eventListeners.Contains(listener))
-        {
-            eventListeners.Add(listener);
-        }
+        eventListeners.Add(listener);
     }
 
     public void UnregisterListener(GameEventListener listener)
     {
-        if (!eventListeners.Contains(listener))
-        {
-            eventListeners.Remove(listener);
-        }
+        eventListeners.Remove(listener);
     }
 }

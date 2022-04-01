@@ -4000,7 +4000,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: f217526cb6df7ce4fbc21ff2e9ec5978, type: 2}
         m_TargetAssemblyTypeName: BoolVariable, Assembly-CSharp
-        m_MethodName: SetValue
+        m_MethodName: SetState
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -14,7 +14,6 @@ public class BoolVariable : ScriptableObject, IValue<bool>
         ResetValue(); 
     }
 
-    // Button
     public void SetState(bool state)
     {
         this.state = state;
