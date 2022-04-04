@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d3d060b094bdd4ca2c284fd5013aa6, type: 3}
   m_Name: HighScore
   m_EditorClassIdentifier: 
-  value: 0
+  intValue: 0
   state: 1
   description: Highest score in the entire game

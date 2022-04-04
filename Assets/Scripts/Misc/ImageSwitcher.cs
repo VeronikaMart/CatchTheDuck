@@ -8,7 +8,7 @@ public class ImageSwitcher : MonoBehaviour
 
     private void Awake()
     {
-        image = GetComponent<Image>();
+        image = (Image)GetComponent("Image");
     }
 
     private void Start()

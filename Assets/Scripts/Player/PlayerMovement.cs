@@ -14,9 +14,9 @@ namespace Player
 
         private void Awake()
         {
-            rb = GetComponent<Rigidbody2D>();
-            animator = GetComponent<Animator>();
-            facing = GetComponent<SpriteRenderer>();
+            rb = (Rigidbody2D)GetComponent("Rigidbody2D");
+            animator = (Animator)GetComponent("Animator");
+            facing = (SpriteRenderer)GetComponent("SpriteRenderer");
         }
 
         public void Move(float direction)

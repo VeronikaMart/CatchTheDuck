@@ -10,7 +10,7 @@ namespace Player
 
         private void Awake()
         {
-            playerMovement = GetComponent<PlayerMovement>();
+            playerMovement = (PlayerMovement)GetComponent("PlayerMovement");
         }
 
         private void Update()

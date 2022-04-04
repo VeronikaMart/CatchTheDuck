@@ -8,7 +8,7 @@ public class SafeArea : MonoBehaviour
 
     private void Awake()
     {
-        rectTransform = GetComponent<RectTransform>();
+        rectTransform = (RectTransform)GetComponent("RectTransform");
     }
 
     private void Start()
