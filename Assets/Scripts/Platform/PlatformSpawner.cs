@@ -24,7 +24,7 @@ namespace Platforms
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.tag == "Platform")
+            if (collision.CompareTag("Platform"))
             {
                 if (collision.transform.position.y == lastPositionY)
                 {
