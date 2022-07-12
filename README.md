@@ -2,7 +2,7 @@
 Infinite 2D runner for kids, made for fun. How to play: catch the ducks, but beware of the trap platforms and move quickly with the camera.  
 Play at itch.io: https://veronika23.itch.io/catch-the-duck  
 All assets belong to: https://www.kenney.nl/  
-Updated to 2020.3.33f1
+Updated to 2020.3.36f1
 
 # Screenshots
 ![Screenshot_1](https://user-images.githubusercontent.com/89480432/161032905-def757fa-33b9-499c-b35f-1c33bf1f7115.png)
